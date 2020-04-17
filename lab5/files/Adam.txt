@@ -1,0 +1,25 @@
+Monday
+08:00 - Math
+09:45 - PE
+11:40 - KCH
+Tuesday
+11:40 - Math
+13:25 - Math
+Wednesday
+09:45 - PE
+11:40 - Programming
+13:25 - Math
+15:20 - English
+Thursday
+13:25 - Programming
+15:20 - English
+Friday
+08:00 - Programming
+09:45 - Math
+11:40 - Math
+13:25 - Programming
+Saturday
+-
+Sunday
+-
+

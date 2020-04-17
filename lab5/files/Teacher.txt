@@ -1,0 +1,26 @@
+Monday
+08:00 - Lecture
+09:45 - Lecture
+11:40 - Practice
+13:25 - Practice
+Tuesday
+11:40 - Practice
+13:25 - Practice
+Wednesday
+09:45 - Practice
+11:40 - Lecture
+13:25 - Lecture
+15:20 - Lecture
+Thursday
+11:40 - Practice
+13:25 - Practice
+15:20 - Practice
+Friday
+08:00 - Lecture
+09:45 - Practice
+11:40 - Practice
+13:25 - Practice
+Saturday
+-
+Sunday
+-
