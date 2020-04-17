@@ -203,11 +203,7 @@ namespace lab5
             students.Add(new Student(GetScheduleFromFile("Student2"), "Student2", 21, (int)Human.GenderEnum.Male, 953505, "studentid"));
             teachers.Add(new Teacher(GetScheduleFromFile("Teacher"), "Teacher", "Math", 30, (int)Human.GenderEnum.Male));
             rectors.Add(new Rector(GetScheduleFromFile("Rector"), "Rector", 40, (int)Human.GenderEnum.Female));
-            //Teacher teacher = new Teacher(GetScheduleFromFile("Teacher"), "Teacher", "Math");
-            //teacher.Gender = (int)Human.GenderEnum.Male;
             
-            //PrintSchedule(schedule);
-            //PrintSchedule(GetScheduleFromFile(teacher.Name));
             while (true)
             {
                 PrintMenu();
@@ -218,9 +214,6 @@ namespace lab5
                     Console.Write("Name: ");
                     var name = Console.ReadLine();
                     PrintSchedule(GetScheduleFromFile(name));
-
-                    
-                    //parts.Find(x => x.PartName.Contains("seat"))); ;
                 }
                 else if(key.Key == ConsoleKey.D4)
                 {
