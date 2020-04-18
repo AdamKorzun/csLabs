@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 using System.Text;
 using dll;
+
 namespace lab4
 {
     class Program
@@ -106,8 +108,11 @@ namespace lab4
                 Console.ReadKey();
             }
         }
+        [DllImport("C:\\Users\\admin\\Desktop\\C#\\lab2\\Debug\\dllcalc.dll")]
+        public static extern int AddNum(int x, int y);
         static void Assignment2() {
-            Console.WriteLine(dll.Calc.Add(5, 7));
+            
+           AddNum(5, 7);
         }
         static void Main(string[] args)
         {

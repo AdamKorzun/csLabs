@@ -5,94 +5,6 @@ using lab3;
 namespace lab5
 
 {
-    class Student : Human
-    {
-        private List<List<string>> schedule = new List<List<string>>();
-        private string studentId;
-        private int group;
-
-        public Student()
-        {
-
-        }
-        public Student(List<List<string>> schedule, string name)
-        {
-            this.schedule = schedule;
-            this.Name = name;
-        }
-        public Student(List<List<string>> schedule, string name, int age, int gender, int group, string studentId)
-        {
-            this.schedule = schedule;
-            this.Name = name;
-            this.Age = age;
-            this.Gender = gender;
-            this.group = group;
-            this.studentId = studentId;
-        }
-        public List<List<string>> Schedule
-        {
-            get { return schedule; }
-            set { schedule = value; }
-        }
-        public string StudentId
-        {
-            get { return studentId; }
-            set { studentId = value; }
-        }
-        public int Group
-        {
-            get { return group; }
-            set { group = value; }
-        }
-    }
-    class Teacher : Human
-    {
-        private List<List<string>> schedule = new List<List<string>>();
-        private string subject;
-        public Teacher()
-        {
-
-        }
-        public Teacher(List<List<string>> schedule, string name, string subject, int age, int gender)
-        {
-            this.schedule = schedule;
-            this.Name = name;
-            this.subject = subject;
-            this.Age = age;
-            this.Gender = gender;
-        }
-        public List<List<string>> Schedule
-        {
-            get { return schedule; }
-            set { schedule = value; }
-        }
-
-        public string Subject
-        {
-            get { return subject; }
-            set { subject = value; }
-        }
-    }
-    class Rector : Human
-    {
-        private List<List<string>> schedule = new List<List<string>>();
-        public Rector()
-        {
-
-        }
-        public Rector(List<List<string>> schedule, string name, int age, int gender)
-        {
-            this.schedule = schedule;
-            this.Name = name;
-            this.Age = age;
-            this.Gender = gender;
-        }
-        public List<List<string>> Schedule
-        {
-            get { return schedule; }
-            set { schedule = value; }
-        }
-    }
     class Program
     {
         static List<List<string>> GetScheduleFromFile(string name)
@@ -109,7 +21,8 @@ namespace lab5
                         List<string> temp = new List<string>();
                         temp.Clear();
 
-                        while ((line != "Monday" && line != "Tuesday" && line != "Wednesday" && line != "Thursday" && line != "Friday" && line != "Saturday" && line != "Sunday")
+                        while ((line != "Monday" && line != "Tuesday" && line != "Wednesday" 
+                            && line != "Thursday" && line != "Friday" && line != "Saturday" && line != "Sunday")
                             && sr.Peek() >= 0)
                         {
 
@@ -168,7 +81,8 @@ namespace lab5
             Console.WriteLine("4 - Show students info");
             Console.WriteLine("5 - Show teachers info");
             Console.WriteLine("6 - Show rectors info");
-            Console.WriteLine("7 - Exit");
+            Console.WriteLine("7 - Show schedule by day");
+            Console.WriteLine("8 - Exit");
             Console.WriteLine("Option: ");
         }
         static void PrintInfo(Student student)
@@ -190,7 +104,7 @@ namespace lab5
         {
             Console.WriteLine(rector.Name);
             Console.WriteLine(rector.Age);
-            Console.WriteLine((Human.GenderEnum)rector.Gender);
+            Console.WriteLine(rector.Gender);
            
         }
         static void Main(string[] args)
@@ -199,10 +113,10 @@ namespace lab5
             List<Teacher> teachers = new List<Teacher>();
             List<Rector> rectors = new List<Rector>();
 
-            students.Add(new Student(GetScheduleFromFile("Adam"), "Adam",18, (int)Human.GenderEnum.Male, 953505, "studentid"));
-            students.Add(new Student(GetScheduleFromFile("Student2"), "Student2", 21, (int)Human.GenderEnum.Male, 953505, "studentid"));
-            teachers.Add(new Teacher(GetScheduleFromFile("Teacher"), "Teacher", "Math", 30, (int)Human.GenderEnum.Male));
-            rectors.Add(new Rector(GetScheduleFromFile("Rector"), "Rector", 40, (int)Human.GenderEnum.Female));
+            students.Add(new Student(GetScheduleFromFile("Adam"), "Adam",18, Human.GenderEnum.Male, 953505, "studentid"));
+            students.Add(new Student(GetScheduleFromFile("Student2"), "Student2", 21, Human.GenderEnum.Male, 953505, "studentid"));
+            teachers.Add(new Teacher(GetScheduleFromFile("Teacher"), "Teacher", "Math", 30, Human.GenderEnum.Male));
+            rectors.Add(new Rector(GetScheduleFromFile("Rector"), "Rector", 40, Human.GenderEnum.Female));
             
             while (true)
             {
@@ -236,7 +150,15 @@ namespace lab5
                     PrintInfo(rectors.Find(x => x.Name.Contains(name)));
 
                 }
-                else if (key.Key == ConsoleKey.D7)
+                else if(key.Key == ConsoleKey.D7)
+                {
+                    Console.Write("Name: ");
+                    var name = Console.ReadLine();
+                    Console.Write("Day: ");
+                    int day = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine(string.Join(Environment.NewLine, (students.Find(x => x.Name.Contains(name)).GetScheduleByDay(day)).ToArray()));
+                }
+                else if (key.Key == ConsoleKey.D8)
                 {
                     return;
                 }

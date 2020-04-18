@@ -10,7 +10,7 @@ namespace lab3
         private static bool exists = false;
         private string name;
         private int age;
-        private int gender;
+        protected Human.GenderEnum gender;
         //private string gender;
         private string password;
 
@@ -18,6 +18,11 @@ namespace lab3
         {
             Male = 1,
             Female = 2
+        }
+        public Human.GenderEnum Gender
+        {
+            set { gender = value; }
+            get { return gender; }
         }
         public Human()
         {
@@ -58,17 +63,7 @@ namespace lab3
             }
         }
         
-        public int Gender
-        {
-            get
-            {
-                return gender;
-            }
-            set
-            {
-                gender = value;
-            }
-        }
+        
         
         public string Password
         {
