@@ -107,6 +107,53 @@ namespace lab5
             Console.WriteLine(rector.Gender);
            
         }
+        static List<Student> DeleteDuplicates(List<Student> list) {
+            for (int i = 0; i < list.Count; i++)
+            {
+                for (int j = i + 1; j < list.Count; j++)
+                {
+                    if (list[i].Equals(list[j]))
+                    {
+                        Console.WriteLine("Deleted" + list[j].Info());
+                        list.RemoveAt(j);
+                        j--;
+                    }
+                }
+            }
+            return list;
+        }
+        static List<Teacher> DeleteDuplicates(List<Teacher> list)
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                for (int j = i + 1; j < list.Count; j++)
+                {
+                    if (!Human.Equals(list[i], list[j]))
+                    {
+                        list.RemoveAt(j);
+                        j--;
+                    }
+                }
+            }
+            return list;
+        }
+        static List<Rector> DeleteDuplicates(List<Rector> list)
+        {
+            for (int i = 0; i < list.Count; i++)
+            {
+                for (int j = i + 1; j < list.Count; j++)
+                {
+
+                    if (!Human.Equals(list[i], list[j]))
+                    {
+                       
+                        list.RemoveAt(j);
+                        j--;
+                    }
+                }
+            }
+            return list;
+        }
         static void Main(string[] args)
         {
             List<Student> students = new List<Student>();
@@ -114,10 +161,14 @@ namespace lab5
             List<Rector> rectors = new List<Rector>();
 
             students.Add(new Student(GetScheduleFromFile("Adam"), "Adam",18, Human.GenderEnum.Male, 953505, "studentid"));
+            students.Add(new Student(GetScheduleFromFile("Adam"), "Adam", 18, Human.GenderEnum.Male, 953505, "studentid"));
+
             students.Add(new Student(GetScheduleFromFile("Student2"), "Student2", 21, Human.GenderEnum.Male, 953505, "studentid"));
             teachers.Add(new Teacher(GetScheduleFromFile("Teacher"), "Teacher", "Math", 30, Human.GenderEnum.Male));
             rectors.Add(new Rector(GetScheduleFromFile("Rector"), "Rector", 40, Human.GenderEnum.Female));
-            
+            DeleteDuplicates(students);
+            DeleteDuplicates(teachers);
+            DeleteDuplicates(rectors);
             while (true)
             {
                 PrintMenu();

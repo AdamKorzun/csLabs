@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Security.Cryptography;
 using System.Linq;
+using lab6;
 namespace lab3
 {
-    public class Human
+    public class Human : IInfo, IEquatable<Object>
     {
         private static bool exists = false;
         private string name;
@@ -99,6 +101,11 @@ namespace lab3
             info.Append(". Password: " + password);
             return info.ToString();
         }
+        bool Equals(Object x)
+        {
+            return Equals(x);
+        }
+
     }
     class Program
     {

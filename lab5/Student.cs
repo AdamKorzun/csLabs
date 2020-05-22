@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using lab3;
+using lab6;
 namespace lab5
 
 {
-    class Student : Human
+    class Student : Human, IInfo
     {
         private List<List<string>> schedule = new List<List<string>>();
         private string studentId;
@@ -47,6 +49,18 @@ namespace lab5
             get { return group; }
             set { group = value; }
         }
+        public string Info()
+        {
+            StringBuilder info = new StringBuilder();
+            info.Append("Name: " + Name);
+            info.Append(". Age: " + Age);
+
+            info.Append(". Password: " + Password);
+            info.Append(". Stundet id:" + StudentId);
+            info.Append(". Group:" + Group.ToString());
+            return info.ToString();
+        }
+
     }
 
 }

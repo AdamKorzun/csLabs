@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lab5", "lab5\lab5.csproj", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dllcalc", "dllcalc\dllcalc.vcxproj", "{67EF7DA1-B638-41DB-9FCA-326AA17224E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab6", "lab6\lab6.csproj", "{8F003347-EC13-43EA-8CA1-54AD06988E62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -95,6 +97,18 @@ Global
 		{67EF7DA1-B638-41DB-9FCA-326AA17224E3}.Release|x64.Build.0 = Release|x64
 		{67EF7DA1-B638-41DB-9FCA-326AA17224E3}.Release|x86.ActiveCfg = Release|Win32
 		{67EF7DA1-B638-41DB-9FCA-326AA17224E3}.Release|x86.Build.0 = Release|Win32
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Debug|x64.Build.0 = Debug|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Debug|x86.Build.0 = Debug|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Release|x64.ActiveCfg = Release|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Release|x64.Build.0 = Release|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Release|x86.ActiveCfg = Release|Any CPU
+		{8F003347-EC13-43EA-8CA1-54AD06988E62}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

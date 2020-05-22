@@ -1,9 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 using lab3;
+using lab6;
 namespace lab5
 
 {
-    class Rector : Human
+    class Rector : Human,IInfo
     {
         private List<List<string>> schedule = new List<List<string>>();
         public Rector()
@@ -21,6 +23,14 @@ namespace lab5
         {
             get { return schedule; }
             set { schedule = value; }
+        }
+        public string Info() {
+            StringBuilder info = new StringBuilder();
+            info.Append("Name: " + Name);
+            info.Append(". Age: " + Age);
+            
+            info.Append(". Password: " + Password);
+            return info.ToString();
         }
     }
 
