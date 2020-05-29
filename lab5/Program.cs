@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using lab3;
+using lab8;
 namespace lab5
 
 {
     class Program
     {
+        //delegate void AddLog(string data);
+        //event AddLog NewLog;
         static List<List<string>> GetScheduleFromFile(string name)
         {
             try
@@ -21,7 +24,7 @@ namespace lab5
                         List<string> temp = new List<string>();
                         temp.Clear();
 
-                        while ((line != "Monday" && line != "Tuesday" && line != "Wednesday" 
+                        while ((line != "Monday" && line != "Tuesday" && line != "Wednesday"
                             && line != "Thursday" && line != "Friday" && line != "Saturday" && line != "Sunday")
                             && sr.Peek() >= 0)
                         {
@@ -105,9 +108,10 @@ namespace lab5
             Console.WriteLine(rector.Name);
             Console.WriteLine(rector.Age);
             Console.WriteLine(rector.Gender);
-           
+
         }
-        static List<Student> DeleteDuplicates(List<Student> list) {
+        static List<Student> DeleteDuplicates(List<Student> list)
+        {
             for (int i = 0; i < list.Count; i++)
             {
                 for (int j = i + 1; j < list.Count; j++)
@@ -146,7 +150,7 @@ namespace lab5
 
                     if (!Human.Equals(list[i], list[j]))
                     {
-                       
+
                         list.RemoveAt(j);
                         j--;
                     }
@@ -156,11 +160,32 @@ namespace lab5
         }
         static void Main(string[] args)
         {
+            // lab 8
+            Log logs = new Log();
+            logs.NewLog += delegate (string data) // log.Add(string data);
+            {
+                Console.WriteLine("Added new log");
+                string fileName = "C:\\Users\\admin\\Desktop\\C#\\lab2\\logs.txt";
+                if (!File.Exists(fileName))
+                {
+                    File.Create(fileName);
+                }
+                if (File.Exists(fileName))
+                {
+                    using (System.IO.StreamWriter file = new System.IO.StreamWriter(fileName, true))
+                    {
+                        file.WriteLine(data);
+                    }
+                }
+
+
+            };
+
             List<Student> students = new List<Student>();
             List<Teacher> teachers = new List<Teacher>();
             List<Rector> rectors = new List<Rector>();
 
-            students.Add(new Student(GetScheduleFromFile("Adam"), "Adam",18, Human.GenderEnum.Male, 953505, "studentid"));
+            students.Add(new Student(GetScheduleFromFile("Adam"), "Adam", 18, Human.GenderEnum.Male, 953505, "studentid"));
             students.Add(new Student(GetScheduleFromFile("Adam"), "Adam", 18, Human.GenderEnum.Male, 953505, "studentid"));
 
             students.Add(new Student(GetScheduleFromFile("Student2"), "Student2", 21, Human.GenderEnum.Male, 953505, "studentid"));
@@ -180,7 +205,7 @@ namespace lab5
                     var name = Console.ReadLine();
                     PrintSchedule(GetScheduleFromFile(name));
                 }
-                else if(key.Key == ConsoleKey.D4)
+                else if (key.Key == ConsoleKey.D4)
                 {
                     Console.Write("Name: ");
                     var name = Console.ReadLine();
@@ -201,7 +226,7 @@ namespace lab5
                     PrintInfo(rectors.Find(x => x.Name.Contains(name)));
 
                 }
-                else if(key.Key == ConsoleKey.D7)
+                else if (key.Key == ConsoleKey.D7)
                 {
                     Console.Write("Name: ");
                     var name = Console.ReadLine();
@@ -213,6 +238,13 @@ namespace lab5
                 {
                     return;
                 }
+                else
+                {
+                    
+                }
+                // lab 8
+                logs.Add($"pressed {key.KeyChar.ToString()}");
+               
                 Console.ReadKey();
                 Console.Clear();
             }
