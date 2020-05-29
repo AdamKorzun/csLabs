@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using lab3;
 using lab8;
 namespace lab5
@@ -86,6 +87,7 @@ namespace lab5
             Console.WriteLine("6 - Show rectors info");
             Console.WriteLine("7 - Show schedule by day");
             Console.WriteLine("8 - Exit");
+            Console.WriteLine("9 - Last log");
             Console.WriteLine("Option: ");
         }
         static void PrintInfo(Student student)
@@ -162,7 +164,7 @@ namespace lab5
         {
             // lab 8
             Log logs = new Log();
-            logs.NewLog += delegate (string data) // log.Add(string data);
+            logs.NewLog += delegate (string data) 
             {
                 Console.WriteLine("Added new log");
                 string fileName = "C:\\Users\\admin\\Desktop\\C#\\lab2\\logs.txt";
@@ -180,6 +182,26 @@ namespace lab5
 
 
             };
+            
+            logs.GetLog += delegate ()
+            {
+                string fileName = "C:\\Users\\admin\\Desktop\\C#\\lab2\\logs.txt";
+
+                using (System.IO.StreamReader file = new System.IO.StreamReader(fileName))
+                {
+                    try
+                    {
+                        return System.IO.File.ReadLines(fileName).Last();
+                    }
+                    catch (InvalidOperationException)
+                    {
+                        return "File is empty";
+                    }
+                    
+                }
+
+            };
+            
 
             List<Student> students = new List<Student>();
             List<Teacher> teachers = new List<Teacher>();
@@ -237,6 +259,10 @@ namespace lab5
                 else if (key.Key == ConsoleKey.D8)
                 {
                     return;
+                }
+                else if (key.Key == ConsoleKey.D9)
+                {
+                    Console.WriteLine(logs.GetLastLog());
                 }
                 else
                 {

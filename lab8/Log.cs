@@ -8,11 +8,11 @@ namespace lab8
     public class Log
     {
         public delegate void AddLog(string data);
-        public delegate string latestLog(string dest);
+        public delegate string latestLog();
         public event latestLog GetLog;
         public event AddLog NewLog;
         private List<string> logs;
-    
+
 
 
         public Log()
@@ -26,15 +26,26 @@ namespace lab8
         }
         public string GetLastLog()
         {
-            /*
-            using (System.IO.StreamReader file = new System.IO.StreamReader(fileName))
+           
+            if (GetLog != null)
             {
-                var lastLine = System.IO.File.ReadLines("file.txt").Last();
-                return lastLine;
+                return this.GetLog.Invoke();
+
             }
-            */
-            return logs.Last() ;
-                
+            try
+            {
+                return logs.Last();
+            }
+            catch (InvalidOperationException)
+            {
+                return "No logs found";
+            }
+            catch (Exception e)
+            {
+                return "Someting went wrong";
+            }
+
+
         }
     }
 }
