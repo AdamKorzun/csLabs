@@ -4,7 +4,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 namespace lab7
 {
-    class RationalNumber : IEquatable<RationalNumber>, IComparable
+    class RationalNumber : IEquatable<RationalNumber>, IComparable<RationalNumber>
     {
         readonly int m;
         readonly int n;
@@ -29,7 +29,7 @@ namespace lab7
             }
             return a;
         }
-        public int CompareTo(object num)
+        public int CompareTo(RationalNumber num)
         {
             RationalNumber number = (RationalNumber)num;
             if (number == null)
