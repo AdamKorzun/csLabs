@@ -7,7 +7,7 @@ using System.Linq;
 using lab6;
 namespace lab3
 {
-    public class Human : IInfo, IEquatable<Object>
+    public class Human : IInfo, IEquatable<Human>
     {
         private static bool exists = false;
         private string name;
@@ -101,9 +101,13 @@ namespace lab3
             info.Append(". Password: " + password);
             return info.ToString();
         }
-        bool Equals(Object x)
+        public bool Equals(Human x)
         {
-            return Equals(x);
+            if (this.Name == x.Name)
+            {
+                return true;
+            }
+            return false;
         }
 
     }

@@ -6,8 +6,8 @@ namespace lab7
 {
     class RationalNumber : IEquatable<RationalNumber>, IComparable
     {
-        int m;
-        int n;
+        readonly int m;
+        readonly int n;
         public RationalNumber(int n, int m)
         {
             if (m <= 0)
@@ -124,6 +124,7 @@ namespace lab7
         {
             return num.n / num.m;
         }
+        /*
         public static implicit operator RationalNumber(string num)
         {
 
@@ -142,6 +143,24 @@ namespace lab7
             throw new ArgumentException("No matching regex expressions");
 
         }
+        */
+        public static RationalNumber Parse(string num)
+        {
+
+            if (Regex.IsMatch(num, @"\d+\s?/|:\s?\d+"))
+            {
+                List<int> numberList = new List<int>();
+
+                var numbers = Regex.Matches(num, @"\d+");
+                foreach (Match match in numbers)
+                {
+
+                    numberList.Add(int.Parse(match.Value));
+                }
+                return new RationalNumber((int)numberList[0], (int)numberList[1]);
+            }
+            throw new ArgumentException("No matching regex expressions");
+        }
         // r- underscore, l - /
         public string Print(char option)
         {
@@ -149,12 +168,12 @@ namespace lab7
             {
                 return n.ToString() + "/" + m.ToString();
             }
-            else if(option == 'r')
+            else if (option == 'r')
             {
                 return ("\x1B[4m" + n.ToString() + "\x1B[0m" + "\n" + m.ToString());
             }
             throw new ArgumentException(option.ToString(), " is not an option");
-            
+
         }
     }
 }
