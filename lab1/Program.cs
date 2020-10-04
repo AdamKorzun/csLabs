@@ -298,6 +298,13 @@ namespace lab1
                  
                     
                 }
+                else if(key.Key == ConsoleKey.D5)
+                {
+                    Console.WriteLine();
+                    var filepath = GetAllFiles(GetFileName());
+                    Console.WriteLine(File.GetLastWriteTime(filepath));
+                    Console.ReadKey();
+                }
                 else if (key.Key == ConsoleKey.D6)
                 {
                     return;
