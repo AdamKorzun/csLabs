@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "TNaXWucpGPL+jVwjR7XfTgoJ/Okd5C08/HX1dCfZKrqYaNNQ49mMyZwTGSxUubLUUk/v3jm/Kd6WjXsQK+EPmw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\c#sem3\\labs\\lab2lib\\lab2lib.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

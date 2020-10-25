@@ -1,0 +1,77 @@
+﻿
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Данный файл находится в C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog.
+
+Этап установки успешно выполнен, начинается этап фиксации.
+См. файл журнала выполнения операция для сборки C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Данный файл находится в C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog.
+
+Этап фиксации выполнен успешно.
+
+Групповая операция установки выполнена.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Данный файл находится в C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog.
+
+Этап установки успешно выполнен, начинается этап фиксации.
+См. файл журнала выполнения операция для сборки C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Данный файл находится в C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog.
+
+Этап фиксации выполнен успешно.
+
+Групповая операция установки выполнена.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Данный файл находится в C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog.
+
+На этапе установки возникло исключение.
+System.InvalidOperationException: Невозможно открыть диспетчер управления службами на компьютере '.'. Возможно, для этой операции требуются другие полномочия.
+Возникло внутреннее исключение System.ComponentModel.Win32Exception со следующим сообщением об ошибке: Отказано в доступе.
+
+Начинается этап отката процедуры установки.
+См. файл журнала выполнения операция для сборки C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Данный файл находится в C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog.
+
+Этап отката выполнен успешно.
+
+Групповая операция установки выполнена.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Данный файл находится в C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog.
+
+Этап установки успешно выполнен, начинается этап фиксации.
+См. файл журнала выполнения операция для сборки C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Данный файл находится в C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog.
+
+Этап фиксации выполнен успешно.
+
+Групповая операция установки выполнена.
+
+Выполняется групповая операция установки.
+
+Начинается этап установки процедуры установки.
+См. файл журнала выполнения операция для сборки C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Данный файл находится в C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog.
+
+На этапе установки возникло исключение.
+System.ComponentModel.Win32Exception: Указанная служба уже существует
+
+Начинается этап отката процедуры установки.
+См. файл журнала выполнения операция для сборки C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Данный файл находится в C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog.
+
+Этап отката выполнен успешно.
+
+Групповая операция установки выполнена.

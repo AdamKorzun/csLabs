@@ -1,0 +1,65 @@
+﻿Выполняется установка сборки 'C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog
+   assemblypath = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Выполняется фиксация сборки 'C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog
+   assemblypath = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Удалите файл InstallState, поскольку отсутствуют программы установки.
+Выполняется установка сборки 'C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog
+   assemblypath = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Выполняется фиксация сборки 'C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog
+   assemblypath = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe
+Отсутствуют общие программы установки с атрибутом RunInstallerAttribute.Yes в сборке C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe.
+Удалите файл InstallState, поскольку отсутствуют программы установки.
+Выполняется установка сборки 'C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog
+   assemblypath = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe
+Устанавливается служба Service1...
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется откат для сборки 'C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog
+   assemblypath = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe
+Восстанавливается исходное состояние журнала событий для источника Service1.
+Выполняется установка сборки 'C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog
+   assemblypath = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe
+Устанавливается служба Service1...
+Служба Service1 успешно установлена.
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется фиксация сборки 'C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog
+   assemblypath = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe
+Выполняется установка сборки 'C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog
+   assemblypath = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe
+Устанавливается служба Service1...
+Создается исходный EventLog Service1 в журнале Application...
+Выполняется откат для сборки 'C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   logfile = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.InstallLog
+   assemblypath = C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Debug\lab2ws.exe
+Восстанавливается исходное состояние журнала событий для источника Service1.

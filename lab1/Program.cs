@@ -157,7 +157,7 @@ namespace lab1
            
             return newName;
         }
-        static string ReadDataCompressed(string filepath) //fix
+        static string ReadDataCompressed(string filepath) 
         {
             using (FileStream src = new FileStream(filepath, FileMode.OpenOrCreate))
             {
@@ -200,6 +200,7 @@ namespace lab1
             Console.WriteLine("4 - move file");
             Console.WriteLine("5 - view history");
             Console.WriteLine("6 - exit");
+            Console.WriteLine("7 - Delete");
             Console.Write("Option: ");
         }
         static void MoveFile(string oldpath)
@@ -226,88 +227,96 @@ namespace lab1
             Directory.SetCurrentDirectory(Directory.GetCurrentDirectory() + "/../../../../" + "/WorkDir/");
             CultureInfo.CurrentCulture = new CultureInfo("en-US", false);
             List <Coin> coins = new List<Coin>();
-            //coins.Add(new Coin("eth", (float)352.1));
+            coins.Add(new Coin("eth", (float)352.1));
+           
             while (true)
             {
-                Console.Clear();
-                PrintMenu();
-                var key = Console.ReadKey();
-                if (key.Key == ConsoleKey.D1)
+                try
                 {
-                    Console.Clear();
-                    var filename = GetFileName();
-                    var filepath = GetAllFiles(filename);
-                    string jsonString;
-                    if (Path.GetExtension(filepath) == ".gz")
-                    {
-                        jsonString = ReadDataCompressed(filepath);
-                    }
-                    else
-                    {
-                        jsonString = ReadData(filepath);
-                    }
-                    
-                    coins = JsonSerializer.Deserialize<List<Coin>>(jsonString);
-                    Console.ReadKey();
 
-                }
-                else if (key.Key == ConsoleKey.D2)
-                {
                     Console.Clear();
-                    Console.WriteLine("1 - with comression");
-                    Console.WriteLine("2 - without comression");
-                    key = Console.ReadKey();
+                    PrintMenu();
+                    var key = Console.ReadKey();
                     if (key.Key == ConsoleKey.D1)
                     {
-                        string filepath = GetFileName();
-                        var jsonData = JsonSerializer.Serialize(coins);
-                        WriteDataCompressed(jsonData, filepath);
+                        Console.Clear();
+                        var filename = GetFileName();
+                        var filepath = GetAllFiles(filename);
+                        string jsonString;
+                        if (Path.GetExtension(filepath) == ".gz")
+                        {
+                            jsonString = ReadDataCompressed(filepath);
+                        }
+                        else
+                        {
+                            jsonString = ReadData(filepath);
+                        }
+                        Console.WriteLine(jsonString);
+                        coins = JsonSerializer.Deserialize<List<Coin>>(jsonString);
+                        Console.ReadKey();
+
                     }
                     else if (key.Key == ConsoleKey.D2)
                     {
-                        string filepath = GetFileName();
-                        string jsonData = JsonSerializer.Serialize(coins);
-                        WriteData(filepath, jsonData);
-                        
+                        Console.Clear();
+                        Console.WriteLine("1 - with comression");
+                        Console.WriteLine("2 - without comression");
+                        key = Console.ReadKey();
+                        if (key.Key == ConsoleKey.D1)
+                        {
+                            string filepath = GetFileName();
+                            var jsonData = JsonSerializer.Serialize(coins);
+                            WriteDataCompressed(jsonData, filepath);
+                        }
+                        else if (key.Key == ConsoleKey.D2)
+                        {
+                            string filepath = GetFileName();
+                            string jsonData = JsonSerializer.Serialize(coins);
+                            WriteData(filepath, jsonData);
+
+
+                        }
+
+                        Console.ReadKey();
+                    }
+                    else if (key.Key == ConsoleKey.D3)
+                    {
+                        string filepath = GetAllFiles(GetFileName());
+                        RenameFile(filepath);
+                        Console.ReadKey();
 
                     }
-                    Console.ReadKey();
-                }
-                else if (key.Key == ConsoleKey.D3)
-                {
-                    string filepath = GetAllFiles(GetFileName());
-                    RenameFile(filepath);
-                    Console.ReadKey();
-
-                }
-                else if (key.Key == ConsoleKey.D4)
-                {
-                    try
-                    {
+                    else if (key.Key == ConsoleKey.D4)
+                    { 
                         Console.Clear();
                         var filepath = GetAllFiles(GetFileName());
                         MoveFile(filepath);
                         Console.ReadKey();
                     }
-                    catch (Exception e)
+                    else if (key.Key == ConsoleKey.D5)
                     {
-                        Console.WriteLine(e.Message);
+                        Console.WriteLine();
+                        var filepath = GetAllFiles(GetFileName());
+                        Console.Write("Last write: ");
+                        Console.WriteLine(File.GetLastWriteTime(filepath));
                         Console.ReadKey();
-                        continue;
                     }
-                 
-                    
+                    else if (key.Key == ConsoleKey.D6)
+                    {
+                        return;
+                    }
+                    else if (key.Key == ConsoleKey.D7)
+                    {
+                        Console.WriteLine();
+                        var filepath = GetAllFiles(GetFileName());
+                        File.Delete(filepath);
+
+                    }
                 }
-                else if(key.Key == ConsoleKey.D5)
+                catch (Exception e)
                 {
-                    Console.WriteLine();
-                    var filepath = GetAllFiles(GetFileName());
-                    Console.WriteLine(File.GetLastWriteTime(filepath));
+                    Console.WriteLine(e.Message);
                     Console.ReadKey();
-                }
-                else if (key.Key == ConsoleKey.D6)
-                {
-                    return;
                 }
 
             }

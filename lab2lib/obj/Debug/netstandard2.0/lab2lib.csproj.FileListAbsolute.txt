@@ -1,0 +1,9 @@
+C:\Users\admin\Desktop\c#sem3\labs\lab2lib\bin\Debug\netstandard2.0\lab2lib.deps.json
+C:\Users\admin\Desktop\c#sem3\labs\lab2lib\bin\Debug\netstandard2.0\lab2lib.dll
+C:\Users\admin\Desktop\c#sem3\labs\lab2lib\bin\Debug\netstandard2.0\lab2lib.pdb
+C:\Users\admin\Desktop\c#sem3\labs\lab2lib\obj\Debug\netstandard2.0\lab2lib.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\c#sem3\labs\lab2lib\obj\Debug\netstandard2.0\lab2lib.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\c#sem3\labs\lab2lib\obj\Debug\netstandard2.0\lab2lib.AssemblyInfo.cs
+C:\Users\admin\Desktop\c#sem3\labs\lab2lib\obj\Debug\netstandard2.0\lab2lib.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\c#sem3\labs\lab2lib\obj\Debug\netstandard2.0\lab2lib.dll
+C:\Users\admin\Desktop\c#sem3\labs\lab2lib\obj\Debug\netstandard2.0\lab2lib.pdb

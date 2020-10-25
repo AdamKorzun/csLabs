@@ -1,0 +1,12 @@
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Release\lab2ws.exe.config
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Release\lab2ws.exe
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Release\lab2ws.pdb
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Release\lab2lib.dll
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\bin\Release\lab2lib.pdb
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\obj\Release\lab2ws.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\obj\Release\lab2ws.ProjectInstaller.resources
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\obj\Release\lab2ws.csproj.GenerateResource.cache
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\obj\Release\lab2ws.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\obj\Release\lab2ws.csproj.CopyComplete
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\obj\Release\lab2ws.exe
+C:\Users\admin\Desktop\c#sem3\labs\lab2ws\obj\Release\lab2ws.pdb

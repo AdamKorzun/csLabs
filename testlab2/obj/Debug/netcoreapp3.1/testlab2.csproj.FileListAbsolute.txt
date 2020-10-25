@@ -1,0 +1,16 @@
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\bin\Debug\netcoreapp3.1\testlab2.exe
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\bin\Debug\netcoreapp3.1\testlab2.deps.json
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\bin\Debug\netcoreapp3.1\testlab2.runtimeconfig.json
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\bin\Debug\netcoreapp3.1\testlab2.runtimeconfig.dev.json
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\bin\Debug\netcoreapp3.1\testlab2.dll
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\bin\Debug\netcoreapp3.1\testlab2.pdb
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\bin\Debug\netcoreapp3.1\lab2lib.dll
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\bin\Debug\netcoreapp3.1\lab2lib.pdb
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\obj\Debug\netcoreapp3.1\testlab2.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\obj\Debug\netcoreapp3.1\testlab2.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\obj\Debug\netcoreapp3.1\testlab2.AssemblyInfo.cs
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\obj\Debug\netcoreapp3.1\testlab2.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\obj\Debug\netcoreapp3.1\testlab2.csproj.CopyComplete
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\obj\Debug\netcoreapp3.1\testlab2.dll
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\obj\Debug\netcoreapp3.1\testlab2.pdb
+C:\Users\admin\Desktop\c#sem3\labs\testlab2\obj\Debug\netcoreapp3.1\testlab2.genruntimeconfig.cache
