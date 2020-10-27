@@ -66,7 +66,7 @@ namespace lab2lib
             watcher.Filter = fileRegEx;
             var handler = new FileSystemEventHandler(OnCreated);
             watcher.IncludeSubdirectories = true;
-            watcher.Changed += handler;
+            //watcher.Changed += handler;
             watcher.Created += handler;
             if (OnRename != null)
             {

@@ -1,14 +1,1 @@
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\Новый текстовый документ (2).txt", так как этот файл используется другим процессом.
-Не удалось найти часть пути "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\TargetDirectory\test\Новый текстовый документ.gz".
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\Новый текстовый документ.txt", так как этот файл используется другим процессом.
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\123.txt", так как этот файл используется другим процессом.
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\123.txt", так как этот файл используется другим процессом.
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\123.txt", так как этот файл используется другим процессом.
-Плохие данные.
-
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\asjdf;ldajsfdas.txt", так как этот файл используется другим процессом.
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\asjdf;ldajsfdas.txt", так как этот файл используется другим процессом.
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\sajfklasf.txt", так как этот файл используется другим процессом.
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\sajfklasf.txt", так как этот файл используется другим процессом.
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\sajfklasf.txt", так как этот файл используется другим процессом.
-Процесс не может получить доступ к файлу "C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\sajfklasf.txt", так как этот файл используется другим процессом.
+C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory\2020\10\27\test2.txt

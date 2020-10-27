@@ -58,7 +58,7 @@ namespace lab2ws
         private static void OnCreated(object source, FileSystemEventArgs e)
         {
             // TODO:
-            // Add file renaming
+            // fix file change
             // Add file renamed event
             
         
@@ -68,9 +68,26 @@ namespace lab2ws
 
                 if (ext == ".txt")
                 {
-                    var time = DateTime.Now;
+                    var time = File.GetCreationTime(e.FullPath);
+                   
                     
+                    var newFilePath = Path.Combine(@"C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory", time.Year.ToString());
+                    newFilePath = Path.Combine(newFilePath, time.Month.ToString());
+                    newFilePath = Path.Combine(newFilePath, time.Day.ToString());
+                    newFilePath = Path.Combine(newFilePath, Path.GetFileName(e.FullPath));
                     var newName = Path.ChangeExtension(e.FullPath, ".gz");
+                    using (StreamWriter outputFile = new StreamWriter(@"C:\Users\admin\Desktop\c#sem3\labs\logs.txt"))
+                    {
+                        outputFile.Write(newFilePath);
+                    }
+                    if (!Directory.Exists(Path.GetDirectoryName(newFilePath)))
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(newFilePath));
+                        File.Move(e.FullPath, newFilePath);
+                        return;
+
+                    }
+                    File.Move(e.FullPath, newFilePath);
                     newName = newName.Replace("SourceDirectory", "TargetDirectory");
                     Console.WriteLine(newName);
                     FW.SendFile(e.FullPath, newName, "aaaaaaaa");
