@@ -1,0 +1,7 @@
+{
+  "Encryption": true,
+  "Compress": true,
+  "EncryptionKey": "aaaaaaaa",
+  "SourceFilePath": "C:\\Users\\admin\\Desktop\\c#sem3\\labs\\lab2Dir\\SourceDirectory",
+  "TargetFilePath": "C:\\Users\\admin\\Desktop\\c#sem3\\labs\\lab2Dir\\TargetDirectory"
+}

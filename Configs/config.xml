@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TransferOptions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Encryption>true</Encryption>
+  <Compress>true</Compress>
+  <EncryptionKey>aaaaaaaa</EncryptionKey>
+  <SourceFilePath>C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\SourceDirectory</SourceFilePath>
+  <TargetFilePath>C:\Users\admin\Desktop\c#sem3\labs\lab2Dir\TargetDirectory</TargetFilePath>
+</TransferOptions>
