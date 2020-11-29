@@ -10,6 +10,9 @@ private string sourceFilePath;
 private string targetFilePath;
 ```
 EncryptOptions для теста, персеров для любого класса.
+```
+var xmlConfig = manager.GetConfig<eEncryptOptions>();
+```
 ### Parsers
 Интерфейс IParsable c методом GetConfig и 2 парсера, реализющие GetConfig: <br />
 JsonParser - использует System.Text.Json
