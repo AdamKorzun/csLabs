@@ -11,7 +11,7 @@ private string targetFilePath;
 ```
 EncryptOptions для теста, персеров для любого класса.
 ```
-var xmlConfig = manager.GetConfig<eEncryptOptions>();
+var xmlConfig = manager.GetConfig<EncryptOptions>();
 ```
 ### Parsers
 Интерфейс IParsable c методом GetConfig и 2 парсера, реализющие GetConfig: <br />
