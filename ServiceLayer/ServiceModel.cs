@@ -12,7 +12,7 @@ namespace ServiceLayer
         public ServiceModel(string connectionString)
         {
             ConnectionString = connectionString;
-        }
+        } 
         public ServiceModel() { }
      
        
