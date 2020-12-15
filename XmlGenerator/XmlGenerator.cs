@@ -29,7 +29,7 @@ namespace XMLGenerator
             {
                 using (var sw = new StringWriter()) 
                 {
-                    using (var writer= new XmlWriter.Create(sw))
+                    using (var writer= XmlWriter.Create(sw))
                     {
                         s.Write(writer);
                     }
