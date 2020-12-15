@@ -19,7 +19,7 @@ namespace XMLGenerator
             {
                 serializer.Serialize(files, obj);
             }
-            /*
+            
             XmlReader reader = new XmlReader.Create(filePath);
             XmlSchemaSet schemaSet = new XmlSchemaSet();
             XmlSchemaInference schema = new XmlSchemaInference();
@@ -36,7 +36,7 @@ namespace XMLGenerator
                     File.WriteAllText(filePath, sw.ToString());
                 }
             }
-            */
+            
             
         }
       
