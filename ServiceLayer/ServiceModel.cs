@@ -14,7 +14,5 @@ namespace ServiceLayer
             ConnectionString = connectionString;
         } 
         public ServiceModel() { }
-     
-       
     }
 }
