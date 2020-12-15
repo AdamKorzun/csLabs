@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<FileModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <person>
+    <Name>KenSánchez</Name>
+    <Phone>697-555-0142</Phone>
+  </person>
+  <production>
+    <Quantity>408</Quantity>
+    <Name>Adjustable Race</Name>
+  </production>
+  <sales>
+    <CreditCardNumber>33332664695310</CreditCardNumber>
+  </sales>
+</FileModel>
